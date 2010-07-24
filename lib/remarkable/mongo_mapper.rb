@@ -1,11 +1,11 @@
 # Load Remarkable
 unless Object.const_defined?('Remarkable')
   begin
-    require 'remarkable'
+    require 'remarkable/core'
   rescue LoadError
     require 'rubygems'
     gem 'remarkable'
-    require 'remarkable'
+    require 'remarkable/core'
   end
 end
  
