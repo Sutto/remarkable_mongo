@@ -25,12 +25,8 @@ Gem::Specification.new do |s|
      "lib/remarkable/mongo_mapper/base.rb",
      "lib/remarkable/mongo_mapper/describe.rb",
      "lib/remarkable/mongo_mapper/human_names.rb",
-     "lib/remarkable/mongo_mapper/matchers/allow_values_for_matcher.rb",
      "lib/remarkable/mongo_mapper/matchers/association_matcher.rb",
      "lib/remarkable/mongo_mapper/matchers/have_key_matcher.rb",
-     "lib/remarkable/mongo_mapper/matchers/validate_confirmation_of_matcher.rb",
-     "lib/remarkable/mongo_mapper/matchers/validate_length_of_matcher.rb",
-     "lib/remarkable/mongo_mapper/matchers/validate_presence_of_matcher.rb",
      "locales/en.yml",
      "remarkable_mongo.gemspec",
      "spec/matchers/allow_values_for_matcher_spec.rb",
@@ -50,12 +46,8 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.3.6}
   s.summary = %q{Remarkable Matchers for MongoDB ORMs}
   s.test_files = [
-    "spec/matchers/allow_values_for_matcher_spec.rb",
      "spec/matchers/association_matcher_spec.rb",
      "spec/matchers/have_key_matcher_spec.rb",
-     "spec/matchers/validate_confirmation_of_matcher_spec.rb",
-     "spec/matchers/validate_length_of_matcher_spec.rb",
-     "spec/matchers/validate_presence_of_matcher_spec.rb",
      "spec/model_builder.rb",
      "spec/models.rb",
      "spec/spec_helper.rb"
