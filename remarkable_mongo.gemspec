@@ -67,14 +67,14 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<remarkable>, [">= 0"])
-      s.add_runtime_dependency(%q<mongo_mapper>, ["~> 0.7.6"])
+      s.add_runtime_dependency(%q<mongo_mapper>, ["=> 0.7.6"])
     else
       s.add_dependency(%q<remarkable>, [">= 0"])
-      s.add_dependency(%q<mongo_mapper>, ["~> 0.7.6"])
+      s.add_dependency(%q<mongo_mapper>, ["=> 0.7.6"])
     end
   else
     s.add_dependency(%q<remarkable>, [">= 0"])
-    s.add_dependency(%q<mongo_mapper>, ["~> 0.7.6"])
+    s.add_dependency(%q<mongo_mapper>, ["=> 0.7.6"])
   end
 end
 
