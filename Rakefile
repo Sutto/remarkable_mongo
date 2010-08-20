@@ -1,3 +1,4 @@
+# encoding: utf-8
 require 'rubygems'
 require 'rake'
 require 'spec/rake/spectask'
@@ -12,7 +13,7 @@ begin
     gem.authors = ["Nicolas Mérouze"]
 
     gem.add_dependency('remarkable')
-    gem.add_dependency('mongo_mapper', '~>0.7.6')
+    gem.add_dependency('mongo_mapper', '>= 0.7.6')
   end
 rescue LoadError
   puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"
