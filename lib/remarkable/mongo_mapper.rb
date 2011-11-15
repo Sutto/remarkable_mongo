@@ -23,8 +23,8 @@ Dir[File.join(dir, 'mongo_mapper', 'matchers', '*.rb')].each do |file|
 end
 
 # Include Remarkable MongoMapper matcher in appropriate ExampleGroup
-if defined?(Rspec::Rails)
-  Remarkable.include_matchers!(Remarkable::MongoMapper, Rspec::Rails::ModelExampleGroup)
+if defined?(RSpec::Rails)
+  Remarkable.include_matchers!(Remarkable::MongoMapper, RSpec::Rails::ModelExampleGroup)
 else
-  Remarkable.include_matchers!(Remarkable::MongoMapper, Rspec::Core::ExampleGroup)
+  Remarkable.include_matchers!(Remarkable::MongoMapper, RSpec::Core::ExampleGroup)
 end
